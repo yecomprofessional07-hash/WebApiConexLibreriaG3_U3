@@ -4,7 +4,7 @@ using WebApiLbrosU3.Enitities;
 using WebApiLbrosU3.Infrastructure.Data;
 
 
-namespace WebApiLibrosU3.Features.Inventario.Libros
+namespace WebApiLbrosU3.Features.Inventario.Libros.Dtos
 {
     public class LibrosAppService
     {
@@ -23,19 +23,33 @@ namespace WebApiLibrosU3.Features.Inventario.Libros
             return new ApiResponse<LibroEntity>(libro, "Guardado");
         }
 
-        public async Task Actualizar(LibroEntity libro)
+        public async Task<ApiResponse<LibroEntity>> Actualizar(LibroEntity Libro)
         {
-            _context.Entry(libro).State = EntityState.Modified;
+            _context.Libros.Update(Libro);
             await _context.SaveChangesAsync();
+
+            return new ApiResponse<LibroEntity>(Libro);
         }
 
-        public async Task Eliminar(int id)
+        public async Task<ApiResponse<bool>> Eliminar(int id)
         {
-            var libro = await _context.Libros.FindAsync(id);
-            if (libro != null)
+            var libros = await _context.Libros.FindAsync(id);
+
+            if (libros == null)
             {
-                _context.Libros.Remove(libro);
+                return new ApiResponse<bool>(false, "El libro no existe");
+            }
+
+            try
+            {
+                _context.Libros.Remove(libros);
                 await _context.SaveChangesAsync();
+                return new ApiResponse<bool>(true, "libro eliminado exitosamente");
+            }
+            catch (Exception ex)
+            {
+                string errorReal = ex.InnerException?.Message ?? ex.Message;
+                return new ApiResponse<bool>(false, $"No se puede eliminar: {errorReal}");
             }
         }
     }

@@ -1,21 +1,21 @@
 [
   {
     "ContainingType": "WebApiLibrosU3.Controllers.AdministradoresController",
-    "Method": "Login",
+    "Method": "LoginAdmin",
     "RelativePath": "api/Administradores/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "loginData",
-        "Type": "WebApiLbrosU3.Enitities.AdministradorEntity",
+        "Name": "login",
+        "Type": "WebApiLbrosU3.Commons.Dtos.LoginRequestDtos",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[WebApiLbrosU3.Enitities.AdministradorEntity, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Object, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -35,7 +35,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[WebApiLbrosU3.Enitities.CategoriaEntity, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[WebApiLbrosU3.Features.Inventario.Categorias.Dtos.CategoriaDtos, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -55,33 +55,7 @@
     "Parameters": [
       {
         "Name": "categoria",
-        "Type": "WebApiLbrosU3.Enitities.CategoriaEntity",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[WebApiLbrosU3.Enitities.CategoriaEntity, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "WebApiLibrosU3.Controllers.CategoriasController",
-    "Method": "Update",
-    "RelativePath": "api/Categorias",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "categoria",
-        "Type": "WebApiLbrosU3.Enitities.CategoriaEntity",
+        "Type": "WebApiLbrosU3.Features.Inventario.Categorias.Dtos.CategoriaCreateDtos",
         "IsRequired": true
       }
     ],
@@ -114,6 +88,37 @@
     "ReturnTypes": [
       {
         "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[WebApiLbrosU3.Enitities.CategoriaEntity, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApiLibrosU3.Controllers.CategoriasController",
+    "Method": "Update",
+    "RelativePath": "api/Categorias/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "WebApiLbrosU3.Features.Inventario.Categorias.Dtos.CategoriaDtos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -159,7 +164,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[WebApiLbrosU3.Enitities.ClienteEntity, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[WebApiLbrosU3.Features.Usuarios.Clientes.Dtos.ClientesDtos, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -178,40 +183,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cliente",
-        "Type": "WebApiLbrosU3.Enitities.ClienteEntity",
+        "Name": "dto",
+        "Type": "WebApiLbrosU3.Features.Usuarios.Clientes.Dtos.WebApiLbrosU3.Features.Usuarios.Clientes.Dtos.ClienteCreateDtos",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
         "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[WebApiLbrosU3.Enitities.ClienteEntity, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "WebApiLibrosU3.Controllers.ClientesController",
-    "Method": "Update",
-    "RelativePath": "api/Clientes",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "cliente",
-        "Type": "WebApiLbrosU3.Enitities.ClienteEntity",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -237,7 +216,38 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[WebApiLbrosU3.Enitities.ClienteEntity, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[WebApiLbrosU3.Features.Usuarios.Clientes.Dtos.ClientesDtos, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApiLibrosU3.Controllers.ClientesController",
+    "Method": "Update",
+    "RelativePath": "api/Clientes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "cliente",
+        "Type": "WebApiLbrosU3.Enitities.ClienteEntity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -274,6 +284,32 @@
     ]
   },
   {
+    "ContainingType": "WebApiLibrosU3.Controllers.ClientesController",
+    "Method": "Login",
+    "RelativePath": "api/Clientes/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "WebApiLbrosU3.Commons.Dtos.LoginRequestDtos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[WebApiLbrosU3.Features.Usuarios.Clientes.Dtos.ClientesDtos, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebApiLibrosU3.Controllers.LibrosController",
     "Method": "GetAll",
     "RelativePath": "api/Libros",
@@ -283,7 +319,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[WebApiLbrosU3.Enitities.LibroEntity, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[WebApiLbrosU3.Features.Inventario.Libros.Dtos.LibroDto, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -302,40 +338,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "libro",
-        "Type": "WebApiLbrosU3.Enitities.LibroEntity",
+        "Name": "dto",
+        "Type": "WebApiLbrosU3.Features.Inventario.Libros.Dtos.WebApiLbrosU3.Features.Inventario.Libros.DTOs.LibroCreateDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
         "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[WebApiLbrosU3.Enitities.LibroEntity, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "WebApiLibrosU3.Controllers.LibrosController",
-    "Method": "Update",
-    "RelativePath": "api/Libros",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "libro",
-        "Type": "WebApiLbrosU3.Enitities.LibroEntity",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -362,6 +372,37 @@
     "ReturnTypes": [
       {
         "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[WebApiLbrosU3.Enitities.LibroEntity, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApiLibrosU3.Controllers.LibrosController",
+    "Method": "Update",
+    "RelativePath": "api/Libros/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "libro",
+        "Type": "WebApiLbrosU3.Enitities.LibroEntity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -407,7 +448,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[WebApiLbrosU3.Enitities.ProveedorEntity, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[WebApiLbrosU3.Features.Inventario.Proveedores.Dtos.ProveedorDtos, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -426,40 +467,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "proveedor",
-        "Type": "WebApiLbrosU3.Enitities.ProveedorEntity",
+        "Name": "dto",
+        "Type": "WebApiLbrosU3.Features.Inventario.Proveedores.Dtos.ProveedorCreateDtos",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
         "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[WebApiLbrosU3.Enitities.ProveedorEntity, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "WebApiLibrosU3.Controllers.ProveedoresController",
-    "Method": "Update",
-    "RelativePath": "api/Proveedores",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "proveedor",
-        "Type": "WebApiLbrosU3.Enitities.ProveedorEntity",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -486,6 +501,37 @@
     "ReturnTypes": [
       {
         "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[WebApiLbrosU3.Enitities.ProveedorEntity, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApiLibrosU3.Controllers.ProveedoresController",
+    "Method": "Update",
+    "RelativePath": "api/Proveedores/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "proveedor",
+        "Type": "WebApiLbrosU3.Enitities.ProveedorEntity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -530,14 +576,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "nuevaVenta",
-        "Type": "WebApiLbrosU3.Enitities.VentaEntity",
+        "Name": "ventaDto",
+        "Type": "WebApiLbrosU3.Features.Facturacion.Dtos.VentaCreateDtos",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[WebApiLbrosU3.Enitities.VentaEntity, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -557,7 +603,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[WebApiLbrosU3.Enitities.VentaEntity, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "WebApiLbrosU3.Commons.Models.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[WebApiLbrosU3.Features.Facturacion.Dtos.VentaDtos, WebApiLbrosU3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using WebApiLbrosU3.Infrastructure.Data; // Tu carpeta del Contexto
-using WebApiLibrosU3.Features.Inventario.Libros;
-using WebApiLibrosU3.Features.Inventario.Categorias;
-using WebApiLibrosU3.Features.Inventario.Proveedores;
-using WebApiLibrosU3.Features.Usuarios.Clientes;
 using WebApiLibrosU3.Features.Usuarios.Administradores;
-using WebApiLbrosU3.Features.Facturacion.Ventas;
+using WebApiLbrosU3.Features.Inventario.Libros.Dtos;
+using WebApiLbrosU3.Features.Inventario.Categorias.Dtos;
+using WebApiLbrosU3.Features.Inventario.Proveedores.Dtos;
+using WebApiLbrosU3.Features.Facturacion.Dtos;
+using WebApiLbrosU3.Features.Usuarios.Clientes.Dtos;
 
 var builder = WebApplication.CreateBuilder(args);
 

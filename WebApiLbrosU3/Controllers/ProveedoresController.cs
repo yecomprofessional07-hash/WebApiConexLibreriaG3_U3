@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApiLbrosU3.Commons.Models;
 using WebApiLbrosU3.Enitities;
-using WebApiLibrosU3.Features.Inventario.Proveedores;
+using WebApiLbrosU3.Features.Inventario.Proveedores.Dtos;
 
 namespace WebApiLibrosU3.Controllers
 {
@@ -16,15 +16,25 @@ namespace WebApiLibrosU3.Controllers
             _proveedoresService = proveedoresService;
         }
 
-        // READ: Listar todos
+        // READ: Listar todos usando ProveedorDto
         [HttpGet]
-        public async Task<ActionResult<ApiResponse<List<ProveedorEntity>>>> GetAll()
+        public async Task<ActionResult<ApiResponse<List<ProveedorDtos>>>> GetAll()
         {
-            var data = await _proveedoresService.ObtenerTodos();
-            return Ok(new ApiResponse<List<ProveedorEntity>>(data, "Lista de proveedores cargada"));
+            var entities = await _proveedoresService.ObtenerTodos();
+
+            // Mapeamos a DTO para enviar solo lo necesario a Angular
+            var dtos = entities.Select(p => new ProveedorDtos
+            {
+                Id = p.Id,
+                Nombre = p.Nombre,
+                Telefono = p.Telefono,
+                Correo = p.Correo
+            }).ToList();
+
+            return Ok(new ApiResponse<List<ProveedorDtos>>(dtos, "Lista de proveedores cargada"));
         }
 
-        // READ: Obtener por Id (Requerido para Inventario)
+        // READ: Obtener por Id
         [HttpGet("{id}")]
         public async Task<ActionResult<ApiResponse<ProveedorEntity>>> GetById(int id)
         {
@@ -35,29 +45,52 @@ namespace WebApiLibrosU3.Controllers
             return Ok(new ApiResponse<ProveedorEntity>(proveedor));
         }
 
-        // CREATE: Guardar nuevo proveedor
+        // CREATE: Recibe ProveedorCreateDto y mapea a Entity
         [HttpPost]
-        public async Task<ActionResult<ApiResponse<ProveedorEntity>>> Create([FromBody] ProveedorEntity proveedor)
+        public async Task<ActionResult<ApiResponse<ProveedorEntity>>> Create([FromBody] ProveedorCreateDtos dto)
         {
-            // Nota: Asegúrate que tu Service devuelva ApiResponse para que esta línea funcione
-            var response = await _proveedoresService.Guardar(proveedor);
+            var nuevaEntidad = new ProveedorEntity
+            {
+                Nombre = dto.Nombre,
+                Telefono = dto.Telefono,
+                Correo = dto.Correo,
+                Activo = true
+                // La FechaCreacion la asigna el Service
+            };
+
+            var response = await _proveedoresService.Guardar(nuevaEntidad);
+
+            if (!response.Success)
+                return BadRequest(response);
+
             return Ok(response);
         }
 
-        // UPDATE: Actualizar información
-        [HttpPut]
-        public async Task<ActionResult<ApiResponse<bool>>> Update([FromBody] ProveedorEntity proveedor)
+        // UPDATE: Ahora valida la respuesta del Service
+        [HttpPut("{id}")]
+        public async Task<ActionResult<ApiResponse<bool>>> Update(int id, [FromBody] ProveedorEntity proveedor)
         {
-            await _proveedoresService.Actualizar(proveedor);
-            return Ok(new ApiResponse<bool>(true, "Proveedor actualizado correctamente"));
+            if (id != proveedor.Id)
+                return BadRequest(new ApiResponse<bool>(false, "El ID no coincide"));
+
+            var response = await _proveedoresService.Actualizar(proveedor);
+
+            if (!response.Success)
+                return BadRequest(response);
+
+            return Ok(response);
         }
 
-        // DELETE: Eliminar
+        // DELETE: Ahora informa si no se pudo eliminar por FK (Libros asociados)
         [HttpDelete("{id}")]
         public async Task<ActionResult<ApiResponse<bool>>> Delete(int id)
         {
-            await _proveedoresService.Eliminar(id);
-            return Ok(new ApiResponse<bool>(true, "Proveedor eliminado del sistema"));
+            var response = await _proveedoresService.Eliminar(id);
+
+            if (!response.Success)
+                return BadRequest(response);
+
+            return Ok(response);
         }
     }
 }

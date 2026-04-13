@@ -3,56 +3,48 @@
   "WorkspaceRootPath": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\features\\inventario\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\features\\inventario\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\features\\usuarios\\administradores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\features\\usuarios\\administradores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\features\\usuarios\\clientes\\dtos\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\features\\usuarios\\clientes\\dtos\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\controllers\\administradorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\controllers\\administradorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\enitities\\libroentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\enitities\\libroentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\features\\usuarios\\administradores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\features\\usuarios\\administradores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\features\\usuarios\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\features\\usuarios\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\infraestructure\\data\\libreriacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\infraestructure\\data\\libreriacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\commons\\dtos\\loginrequestdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\commons\\dtos\\loginrequestdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\controllers\\administradorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\controllers\\administradorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\features\\inventario\\libros\\dtos\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\features\\inventario\\libros\\dtos\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\features\\inventario\\categorias\\dtos\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\features\\inventario\\categorias\\dtos\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\commons\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\commons\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\features\\facturacion\\dtos\\ventadtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\features\\facturacion\\dtos\\ventadtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|d:\\yaret\\documents\\poo_clase\\webapilbrosu3\\webapilbrosu3\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{360B5E7F-767B-6A9A-F7EE-30EF5ADF1224}|WebApiLbrosU3\\WebApiLbrosU3.csproj|solutionrelative:webapilbrosu3\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -65,74 +57,95 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Clientes.cs",
+              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Features\\Usuarios\\Clientes\\Dtos\\Clientes.cs",
+              "RelativeDocumentMoniker": "WebApiLbrosU3\\Features\\Usuarios\\Clientes\\Dtos\\Clientes.cs",
+              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Features\\Usuarios\\Clientes\\Dtos\\Clientes.cs",
+              "RelativeToolTip": "WebApiLbrosU3\\Features\\Usuarios\\Clientes\\Dtos\\Clientes.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAmwE8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T08:33:18.224Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "WebApiLbrosU3\\Controllers\\ClientesController.cs",
+              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "WebApiLbrosU3\\Controllers\\ClientesController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAmwC4AAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T07:13:14.498Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Categorias.cs",
-              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Features\\Inventario\\Categorias.cs",
-              "RelativeDocumentMoniker": "WebApiLbrosU3\\Features\\Inventario\\Categorias.cs",
-              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Features\\Inventario\\Categorias.cs",
-              "RelativeToolTip": "WebApiLbrosU3\\Features\\Inventario\\Categorias.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T05:35:54.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoriasController.cs",
-              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Controllers\\CategoriasController.cs",
-              "RelativeDocumentMoniker": "WebApiLbrosU3\\Controllers\\CategoriasController.cs",
-              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Controllers\\CategoriasController.cs",
-              "RelativeToolTip": "WebApiLbrosU3\\Controllers\\CategoriasController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAwwD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T05:37:13.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Administradores.cs",
               "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Features\\Usuarios\\Administradores.cs",
               "RelativeDocumentMoniker": "WebApiLbrosU3\\Features\\Usuarios\\Administradores.cs",
               "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Features\\Usuarios\\Administradores.cs",
               "RelativeToolTip": "WebApiLbrosU3\\Features\\Usuarios\\Administradores.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T02:46:03.055Z"
+              "WhenOpened": "2026-04-13T07:01:45.742Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Clientes.cs",
-              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Features\\Usuarios\\Clientes.cs",
-              "RelativeDocumentMoniker": "WebApiLbrosU3\\Features\\Usuarios\\Clientes.cs",
-              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Features\\Usuarios\\Clientes.cs",
-              "RelativeToolTip": "WebApiLbrosU3\\Features\\Usuarios\\Clientes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "LoginRequestDtos.cs",
+              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Commons\\Dtos\\LoginRequestDtos.cs",
+              "RelativeDocumentMoniker": "WebApiLbrosU3\\Commons\\Dtos\\LoginRequestDtos.cs",
+              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Commons\\Dtos\\LoginRequestDtos.cs",
+              "RelativeToolTip": "WebApiLbrosU3\\Commons\\Dtos\\LoginRequestDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T02:45:48.092Z"
+              "WhenOpened": "2026-04-13T06:56:32.69Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "LibreriaContext.cs",
-              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Infraestructure\\Data\\LibreriaContext.cs",
-              "RelativeDocumentMoniker": "WebApiLbrosU3\\Infraestructure\\Data\\LibreriaContext.cs",
-              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Infraestructure\\Data\\LibreriaContext.cs",
-              "RelativeToolTip": "WebApiLbrosU3\\Infraestructure\\Data\\LibreriaContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Commons\\Models\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "WebApiLbrosU3\\Commons\\Models\\ApiResponse.cs",
+              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Commons\\Models\\ApiResponse.cs",
+              "RelativeToolTip": "WebApiLbrosU3\\Commons\\Models\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T02:48:26.93Z"
+              "WhenOpened": "2026-04-13T07:27:38.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Categorias.cs",
+              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Features\\Inventario\\Categorias\\Dtos\\Categorias.cs",
+              "RelativeDocumentMoniker": "WebApiLbrosU3\\Features\\Inventario\\Categorias\\Dtos\\Categorias.cs",
+              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Features\\Inventario\\Categorias\\Dtos\\Categorias.cs",
+              "RelativeToolTip": "WebApiLbrosU3\\Features\\Inventario\\Categorias\\Dtos\\Categorias.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwDIAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T07:29:49.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Libros.cs",
+              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Features\\Inventario\\Libros\\Dtos\\Libros.cs",
+              "RelativeDocumentMoniker": "WebApiLbrosU3\\Features\\Inventario\\Libros\\Dtos\\Libros.cs",
+              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Features\\Inventario\\Libros\\Dtos\\Libros.cs",
+              "RelativeToolTip": "WebApiLbrosU3\\Features\\Inventario\\Libros\\Dtos\\Libros.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwDQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T07:33:18.447Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -142,7 +155,7 @@
               "RelativeDocumentMoniker": "WebApiLbrosU3\\Program.cs",
               "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Program.cs",
               "RelativeToolTip": "WebApiLbrosU3\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAADwvxUAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAnwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T04:23:32.245Z",
               "EditorCaption": ""
@@ -150,89 +163,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\appsettings.json",
-              "RelativeDocumentMoniker": "WebApiLbrosU3\\appsettings.json",
-              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\appsettings.json",
-              "RelativeToolTip": "WebApiLbrosU3\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-08T04:29:04.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LibroEntity.cs",
-              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Enitities\\LibroEntity.cs",
-              "RelativeDocumentMoniker": "WebApiLbrosU3\\Enitities\\LibroEntity.cs",
-              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Enitities\\LibroEntity.cs",
-              "RelativeToolTip": "WebApiLbrosU3\\Enitities\\LibroEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T05:16:52.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "VentasController.cs",
-              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Controllers\\VentasController.cs",
-              "RelativeDocumentMoniker": "WebApiLbrosU3\\Controllers\\VentasController.cs",
-              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Controllers\\VentasController.cs",
-              "RelativeToolTip": "WebApiLbrosU3\\Controllers\\VentasController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T02:54:25.736Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LibrosController.cs",
-              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Controllers\\LibrosController.cs",
-              "RelativeDocumentMoniker": "WebApiLbrosU3\\Controllers\\LibrosController.cs",
-              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Controllers\\LibrosController.cs",
-              "RelativeToolTip": "WebApiLbrosU3\\Controllers\\LibrosController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowAIAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T02:54:09.111Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ClientesController.cs",
-              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Controllers\\ClientesController.cs",
-              "RelativeDocumentMoniker": "WebApiLbrosU3\\Controllers\\ClientesController.cs",
-              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Controllers\\ClientesController.cs",
-              "RelativeToolTip": "WebApiLbrosU3\\Controllers\\ClientesController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowC0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T02:48:58.027Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "AdministradoresController.cs",
               "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Controllers\\AdministradoresController.cs",
               "RelativeDocumentMoniker": "WebApiLbrosU3\\Controllers\\AdministradoresController.cs",
               "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Controllers\\AdministradoresController.cs",
               "RelativeToolTip": "WebApiLbrosU3\\Controllers\\AdministradoresController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T02:49:19.271Z"
+              "WhenOpened": "2026-04-13T07:14:56.987Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ApiResponse.cs",
-              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Commons\\Models\\ApiResponse.cs",
-              "RelativeDocumentMoniker": "WebApiLbrosU3\\Commons\\Models\\ApiResponse.cs",
-              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Commons\\Models\\ApiResponse.cs",
-              "RelativeToolTip": "WebApiLbrosU3\\Commons\\Models\\ApiResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "VentaDtos.cs",
+              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Features\\Facturacion\\Dtos\\VentaDtos.cs",
+              "RelativeDocumentMoniker": "WebApiLbrosU3\\Features\\Facturacion\\Dtos\\VentaDtos.cs",
+              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Features\\Facturacion\\Dtos\\VentaDtos.cs",
+              "RelativeToolTip": "WebApiLbrosU3\\Features\\Facturacion\\Dtos\\VentaDtos.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T02:40:07.717Z"
+              "WhenOpened": "2026-04-12T22:49:27.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CategoriasController.cs",
+              "DocumentMoniker": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Controllers\\CategoriasController.cs",
+              "RelativeDocumentMoniker": "WebApiLbrosU3\\Controllers\\CategoriasController.cs",
+              "ToolTip": "D:\\yaret\\Documents\\POO_clase\\WebApiLbrosU3\\WebApiLbrosU3\\Controllers\\CategoriasController.cs",
+              "RelativeToolTip": "WebApiLbrosU3\\Controllers\\CategoriasController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAwG0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T05:37:13.148Z",
+              "EditorCaption": ""
             }
           ]
         }

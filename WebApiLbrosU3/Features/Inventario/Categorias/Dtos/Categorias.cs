@@ -3,7 +3,7 @@ using WebApiLbrosU3.Commons.Models;
 using WebApiLbrosU3.Enitities;
 using WebApiLbrosU3.Infrastructure.Data;
 
-namespace WebApiLibrosU3.Features.Inventario.Categorias
+namespace WebApiLbrosU3.Features.Inventario.Categorias.Dtos
 {
     public class CategoriasAppService
     {
@@ -22,16 +22,34 @@ namespace WebApiLibrosU3.Features.Inventario.Categorias
             return new ApiResponse<CategoriaEntity>(cat);
         }
 
-        public async Task Actualizar(CategoriaEntity cat)
+        public async Task<ApiResponse<CategoriaEntity>> Actualizar(CategoriaEntity cat)
         {
             _context.Categorias.Update(cat);
             await _context.SaveChangesAsync();
+
+            return new ApiResponse<CategoriaEntity>(cat);
         }
 
-        public async Task Eliminar(int id)
+        public async Task<ApiResponse<bool>> Eliminar(int id)
         {
-            var cat = await _context.Categorias.FindAsync(id);
-            if (cat != null) { _context.Categorias.Remove(cat); await _context.SaveChangesAsync(); }
+            var categoria = await _context.Categorias.FindAsync(id);
+
+            if (categoria == null)
+            {
+                return new ApiResponse<bool>(false, "La categoría no existe");
+            }
+
+            try
+            {
+                _context.Categorias.Remove(categoria);
+                await _context.SaveChangesAsync();
+                return new ApiResponse<bool>(true, "Categoría eliminada exitosamente");
+            }
+            catch (Exception ex)
+            {
+                string errorReal = ex.InnerException?.Message ?? ex.Message;
+                return new ApiResponse<bool>(false, $"No se puede eliminar: {errorReal}");
+            }
         }
     }
 

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebApiLbrosU3.Commons.Dtos;
 using WebApiLbrosU3.Commons.Models;
 using WebApiLbrosU3.Enitities;
 using WebApiLibrosU3.Features.Usuarios.Administradores;
@@ -18,27 +19,26 @@ namespace WebApiLibrosU3.Controllers
 
         // Usamos POST para login porque enviamos datos sensibles en el cuerpo de la petición
         [HttpPost("login")]
-        public async Task<ActionResult<ApiResponse<AdministradorEntity>>> Login([FromBody] AdministradorEntity loginData)
+        public async Task<ActionResult<ApiResponse<object>>> LoginAdmin([FromBody] LoginRequestDtos login)
         {
-            // Validamos que el cliente envíe los datos
-            if (string.IsNullOrEmpty(loginData.Nombre) || string.IsNullOrEmpty(loginData.Contraseña))
+            // 1. Llamamos al servicio de administración
+            var response = await _adminService.LoginAdmin(login);
+
+            if (!response.Success || response.Data == null)
             {
-                return BadRequest(new ApiResponse<AdministradorEntity>
-                {
-                    Success = false,
-                    Message = "Nombre y contraseña son requeridos"
-                });
+                return Unauthorized(new ApiResponse<object>(null!, response.Message));
             }
 
-            var response = await _adminService.Login(loginData.Nombre, loginData.Contraseña);
-
-            if (!response.Success)
+            // 2. Devolvemos solo lo necesario (Nombre e Id)
+            // Usamos 'object' o un AdministradorDto para no enviar la contraseña
+            var adminData = new
             {
-                // Si las credenciales fallan, devolvemos 401 Unauthorized
-                return Unauthorized(response);
-            }
+                Id = response.Data.Id,
+                Nombre = response.Data.Nombre
+            };
 
-            return Ok(response);
+            return Ok(new ApiResponse<object>(adminData, "Bienvenido al panel de administración"));
         }
+
     }
 }

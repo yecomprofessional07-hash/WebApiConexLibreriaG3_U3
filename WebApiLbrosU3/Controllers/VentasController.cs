@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApiLbrosU3.Commons.Models;
-using WebApiLbrosU3.Enitities;
-using WebApiLbrosU3.Features.Facturacion.Ventas;
+using WebApiLbrosU3.Features.Facturacion.Dtos;
+// Importante para VentaCreateDto
 
 namespace WebApiLibrosU3.Controllers
 {
@@ -16,38 +16,34 @@ namespace WebApiLibrosU3.Controllers
             _ventasService = ventasService;
         }
 
-        // CREATE: Procesar una nueva venta (Maestro-Detalle)
+        // CREATE: Procesar una nueva venta usando DTO
         [HttpPost]
-        public async Task<ActionResult<ApiResponse<VentaEntity>>> Post([FromBody] VentaEntity nuevaVenta)
+        public async Task<ActionResult<ApiResponse<bool>>> Post([FromBody] VentaCreateDtos ventaDto)
         {
-            // Validamos que la venta traiga al menos un producto
-            if (nuevaVenta.Detalles == null || nuevaVenta.Detalles.Count == 0)
+            // 1. Validación de negocio básica
+            if (ventaDto.Detalles == null || !ventaDto.Detalles.Any())
             {
-                return BadRequest(new ApiResponse<VentaEntity>
-                {
-                    Success = false,
-                    Message = "No se puede realizar una venta sin productos."
-                });
+                return BadRequest(new ApiResponse<bool>(false, "La venta debe contener al menos un libro."));
             }
 
-            var response = await _ventasService.ProcesarNuevaVenta(nuevaVenta);
+            // 2. Llamamos al servicio pasando el DTO
+            var response = await _ventasService.ProcesarNuevaVenta(ventaDto);
 
             if (!response.Success)
             {
-                // Si falló por falta de stock u otro motivo de negocio
                 return BadRequest(response);
             }
 
             return Ok(response);
         }
 
-        // READ: Opcional - Historial de ventas para reportes
+        // READ: Historial de ventas (Sugerencia de implementación con DTO)
         [HttpGet]
-        public async Task<ActionResult<ApiResponse<List<VentaEntity>>>> Get()
+        public async Task<ActionResult<ApiResponse<List<VentaDtos>>>> Get()
         {
-            // Este método puedes implementarlo en tu Service después si te queda tiempo
-            // Por ahora, es útil para verificar que se guardaron las ventas.
-            return Ok(new ApiResponse<string>("Historial de ventas listo para implementar"));
+            // Aquí llamarías a un método del service que use .Select() para mapear a VentaDto
+            // Por ahora mantenemos la respuesta informativa pero con el tipo correcto
+            return Ok(new ApiResponse<string>("Endpoint de historial preparado para devolver VentaDto"));
         }
     }
 }

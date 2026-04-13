@@ -157,3 +157,5 @@ D:\yaret\Documents\POO_clase\WebApiLbrosU3\WebApiLbrosU3\obj\Debug\net10.0\refin
 D:\yaret\Documents\POO_clase\WebApiLbrosU3\WebApiLbrosU3\obj\Debug\net10.0\WebApiLbrosU3.pdb
 D:\yaret\Documents\POO_clase\WebApiLbrosU3\WebApiLbrosU3\obj\Debug\net10.0\WebApiLbrosU3.genruntimeconfig.cache
 D:\yaret\Documents\POO_clase\WebApiLbrosU3\WebApiLbrosU3\obj\Debug\net10.0\ref\WebApiLbrosU3.dll
+D:\yaret\Documents\POO_clase\WebApiLbrosU3\WebApiLbrosU3\obj\Debug\net10.0\WebApiLbrosU3.sourcelink.json
+D:\yaret\Documents\POO_clase\WebApiLbrosU3\WebApiLbrosU3\bin\Debug\net10.0\BCrypt.Net-Next.dll
