@@ -7,6 +7,7 @@
         public string? Autor { get; set; }
         public decimal Precio { get; set; }
         public int Stock { get; set; }
+        public string ? Sinopsis { get; set; }
         public bool Activo { get; set; }
         public DateTime FechaCreacion { get; set; }
 

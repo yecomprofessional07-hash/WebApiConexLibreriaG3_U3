@@ -26,9 +26,10 @@ namespace WebApiLibrosU3.Controllers
             {
                 Id = l.Id,
                 Titulo = l.Titulo,
-                Autor = l.Autor,
+                Autor = l.Autor ?? "Sin Autor",
                 Precio = l.Precio,
                 Stock = l.Stock,
+                Sinopsis = l.Sinopsis ?? "Sin Sinopsis",
                 CategoriaNombre = l.Categoria?.Nombre ?? "Sin Categoría",
                 ProveedorNombre = l.Proveedor?.Nombre ?? "Sin Proveedor"
             }).ToList();

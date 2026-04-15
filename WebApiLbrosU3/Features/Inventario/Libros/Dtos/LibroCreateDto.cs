@@ -18,6 +18,10 @@ namespace WebApiLbrosU3.Features.Inventario.Libros.Dtos
             [Range(0, int.MaxValue)]
             public int Stock { get; set; }
 
+            [Required(ErrorMessage = "La sinopsis es obligatoria")]
+            [StringLength(255)]
+            public string Sinopsis { get; set; } = string.Empty;
+
             // Aquí recibes el ID para la llave foránea de SQL
             [Required]
             public int CategoriaId { get; set; }

@@ -29,8 +29,15 @@ builder.Services.AddScoped<ProveedoresAppService>();
 builder.Services.AddScoped<ClientesAppService>();
 builder.Services.AddScoped<AdministradoresAppService>();
 builder.Services.AddScoped<VentasAppService>();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        // Evita el bucle infinito Venta -> Detalle -> Venta
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+        options.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
+    });
 
-builder.Services.AddControllers();
+
 builder.Services.AddEndpointsApiExplorer();
 
 var app = builder.Build();
